@@ -37,7 +37,7 @@ int main(void) {
     printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone\n");
 
     if ('A') {
-        printf("Aksesoris");
+        printf("Aksesoris\n");
         for (int i = 0; i < jmlaccak; i++) {
             printf("%d %s (Stock: %d) - Rp %d\n", i+1, tipeak[i].nama, tipeak[i].stock, tipeak[i].harga);
         }
