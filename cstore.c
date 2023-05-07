@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//update
+// Kevin
 typedef struct
 {
     char nama;
@@ -32,7 +32,7 @@ int main(void) {
         {"iPhone 12", 0, 12499000},
         {"iPhone 12 Pro", 100, 15499000}
     };
-    
+
     printf("Selamat datang di Store Kami");
     printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone");
 
