@@ -15,6 +15,11 @@ typedef struct
 } Smartphone;
 
 int main(void) {
+    Kategori kate[] = {
+        char 'A' == Aksesoris;
+        char 'S' == Smartphone;
+    };
+    
     Aksesoris tipeak[] = {
         {"Charger 33W", 200, 159000},
         {"Redmi Buds Essential", 250, 199000},
