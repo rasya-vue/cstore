@@ -5,18 +5,18 @@ typedef struct
 {
     char 'A' == Aksesoris;
     char 'S' == Smartphone;
-};
+} Kategori;
 
 typedef struct
 {
     char nama;
-    char harga, stock;
+    int harga, stock;
 } Aksesoris;
 
 typedef struct
 {
     char nama;
-    char harga, stock;
+    int harga, stock;
 } Smartphone;
 
 int main(void) {
