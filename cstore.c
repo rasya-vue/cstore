@@ -1,20 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct
-{
-    char 'A' == Aksesoris;
-    char 'S' == Smartphone;
-} Kategori;
-
-typedef struct
-{
+typedef struct {
     char nama;
     int harga, stock;
 } Aksesoris;
 
-typedef struct
-{
+typedef struct {
     char nama;
     int harga, stock;
 } Smartphone;
@@ -38,10 +30,16 @@ int main(void) {
         {"iPhone 12 Pro", 100, 15499000}
     };
 
+    int jmlaccak = sizeof(tipeak) / sizeof(tipeak[0]);
+    int jmlaccsm = sizeof(tipesm) / sizeof(tipesm[0]);
+
     printf("Selamat datang di Store Kami");
     printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone");
 
-    while (A) {
-        
+    if ('A') {
+        printf("Aksesoris");
+        for (int i = 0; i < jmlaccak; i++) {
+            printf("%d %s (Stock: %d) - Rp %d\n", i+1, tipeak[i].nama, tipeak[i].stock, tipeak[i].harga);
+        }
     }
 }
