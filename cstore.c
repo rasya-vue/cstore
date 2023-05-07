@@ -14,6 +14,6 @@ typedef struct
 } Smartphone;
 
 int main {
-    printf ("Selamat datang di Store Kami");
-    printf ("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone");
+    printf("Selamat datang di Store Kami");
+    printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone");
 }
