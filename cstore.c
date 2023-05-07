@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 typedef struct {
-    char nama;
+    char nama[50];
     int harga, stock;
 } Aksesoris;
 
 typedef struct {
-    char nama;
+    char nama[50];
     int harga, stock;
 } Smartphone;
 
