@@ -2,11 +2,6 @@
 #include <stdlib.h>
 
 typedef struct {
-    char pilihan[1];
-    char nama[10];
-} Kategori;
-
-typedef struct {
     char nama[50];
     int stock, harga;
 } Aksesoris;
@@ -47,7 +42,10 @@ int main(void) {
     printf("Selamat datang di Store Kami\n");
     printf("Pilih 'A' untuk Aksesoris\natau 'S' untuk Smartphone\n");
 
-    for (int i = 0; i < katestore; i++) {
-        printf("%c.  %s. \n", i+1, kate[i].pilihan, kate[i].nama);
+    if ('A') {
+        printf("Aksesoris\n");
+        for (int i = 0; i < jmlaccak; i++) {
+            printf("%d %s (Stock: %d) - Rp %d\n", i+1, tipeak[i].nama, tipeak[i].stock, tipeak[i].harga);
+        }
     }
 }
