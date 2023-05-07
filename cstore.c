@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// oposu
+typedef struct
+{
+    char 'A' == Aksesoris;
+    char 'S' == Smartphone;
+};
+
 typedef struct
 {
     char nama;
@@ -15,11 +20,6 @@ typedef struct
 } Smartphone;
 
 int main(void) {
-    Kategori kate[] = {
-        char 'A' == Aksesoris;
-        char 'S' == Smartphone;
-    };
-    
     Aksesoris tipeak[] = {
         {"Charger 33W", 200, 159000},
         {"Redmi Buds Essential", 250, 199000},
