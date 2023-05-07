@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//update
 typedef struct
 {
     char nama;
@@ -22,7 +23,7 @@ int main(void) {
         {"Redmi Buds 3", 10, 449000},
         {"Redmi Buds 3 Pro", 5, 699000}
     };
-//memek
+
     Smartphone tipesm[] = {
         {"Redmi Note 12", 100, 2999000},
         {"Redmi Note 12 Pro", 80, 4599000},
