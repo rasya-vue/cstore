@@ -3,12 +3,12 @@
 
 typedef struct {
     char nama[50];
-    int harga, stock;
+    int stock, harga;
 } Aksesoris;
 
 typedef struct {
     char nama[50];
-    int harga, stock;
+    int stock, harga;
 } Smartphone;
 
 int main(void) {
@@ -34,7 +34,7 @@ int main(void) {
     int jmlaccsm = sizeof(tipesm) / sizeof(tipesm[0]);
 
     printf("Selamat datang di Store Kami");
-    printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone");
+    printf("Pilih 'A' untuk Aksesoris\n atau 'S' untuk Smartphone\n");
 
     if ('A') {
         printf("Aksesoris");
