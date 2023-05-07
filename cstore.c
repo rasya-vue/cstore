@@ -2,6 +2,11 @@
 #include <stdlib.h>
 
 typedef struct {
+    char pilihan[1];
+    char nama[10];
+} Kategori;
+
+typedef struct {
     char nama[50];
     int stock, harga;
 } Aksesoris;
@@ -12,6 +17,11 @@ typedef struct {
 } Smartphone;
 
 int main(void) {
+    Kategori kate[] = {
+        {"A", "Aksesoris"},
+        {"S", "Smartphone"}
+    };
+
     Aksesoris tipeak[] = {
         {"Charger 33W", 200, 159000},
         {"Redmi Buds Essential", 250, 199000},
@@ -30,16 +40,14 @@ int main(void) {
         {"iPhone 12 Pro", 100, 15499000}
     };
 
+    char katestore = sizeof(kate) / sizeof(kate[0]);
     int jmlaccak = sizeof(tipeak) / sizeof(tipeak[0]);
     int jmlaccsm = sizeof(tipesm) / sizeof(tipesm[0]);
 
     printf("Selamat datang di Store Kami\n");
     printf("Pilih 'A' untuk Aksesoris\natau 'S' untuk Smartphone\n");
 
-    if ('A') {
-        printf("Aksesoris\n");
-        for (int i = 0; i < jmlaccak; i++) {
-            printf("%d %s (Stock: %d) - Rp %d\n", i+1, tipeak[i].nama, tipeak[i].stock, tipeak[i].harga);
-        }
+    for (int i = 0; i < katestore; i++) {
+        printf("%s %s\n", i+1, kate[i].pilihan, kate[i].nama);
     }
 }
