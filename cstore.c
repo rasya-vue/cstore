@@ -50,11 +50,4 @@ int main(void) {
     for (int i = 0; i < katestore; i++) {
         printf("%c.  %s. \n", i+1, kate[i].pilihan, kate[i].nama);
     }
-
-        if ('A') {
-        printf("Aksesoris\n");
-        for (int i = 0; i < jmlaccak; i++) {
-            printf("%d %s (Stock: %d) - Rp %d\n", i+1, tipeak[i].nama, tipeak[i].stock, tipeak[i].harga);
-        }
-    }
 }
